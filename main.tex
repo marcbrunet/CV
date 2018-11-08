@@ -5,7 +5,8 @@
                                     % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
 
 \sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
-
+\usepackage{caption}
+\usepackage{subcaption}
 \begin{document}
 
 \header{Marc}{Brunet}           % Your name
@@ -14,7 +15,7 @@
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION  -- In the aside, each new line forces a line break
 %----------------------------------------------------------------------------------------
-
+\vspace{0.5cm}
 \begin{aside}
 %
 \section{contacto}
@@ -30,16 +31,16 @@ marcbrunet80@gmail.com
 %Spanish fluency
 %
 \section{programming}
-\includegraphics[width=10em]{programing/python.png}\smallskip
-\includegraphics[width=10em]{programing/golang.png}\smallskip
-\includegraphics[width=10em]{programing/Latex.png}\smallskip
-\includegraphics[width=10em]{programing/java.png}
+\includegraphics[width=5em]{programing/python.png}\smallskip
+\includegraphics[width=5em]{programing/golang.png}\smallskip
+\includegraphics[width=5em]{programing/Latex.png}\smallskip
+\includegraphics[width=6em]{programing/java.png}
 %
 \section{DevOps Tols}
-\includegraphics[width=10em]{devops/jenkins.png}\smallskip
-\includegraphics[width=11em]{devops/docker.png}\smallskip
-\includegraphics[width=11em]{devops/ansibl.png}\smallskip
-\includegraphics[width=11em]{devops/vagrant.png}
+\includegraphics[width=5em]{devops/jenkins.png}\smallskip
+\includegraphics[width=5em]{devops/docker.png}\smallskip
+\includegraphics[width=5em]{devops/ansibl.png}\smallskip
+\includegraphics[width=5em]{devops/vagrant.png}
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -167,10 +168,32 @@ marcbrunet80@gmail.com
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{interests}
+\section{interessos}
   \vspace{-0.2cm}
 
-\textbf{professional:} professional interest 1, professional interest 2 and professional interest 3. \textbf{personal:} personal interest 1, personal interest 2, personal interest 3 and personal interest 4.
+\textbf{professional:} estic molt interessat en els entorns Cloud, és a dir en el sistema que s'utilitza per gestionar serveis en local i Cloud mantenir-los en actiu i monotonitzar-los per intentar obtenir millores de rendiment o detectar errors, també amb el tema de la integració continua i testing automatitzat per tal d'obtenir resultats el mes ràpid possible. \smallskip
+
+\textbf{personal:} M'agrada l'electrònica i la impressió en 3 d, des del tema de com es genera el Gcode apartí d'un objecte en 3 d fins a com és gestiona'n el moviment de la màquina per tal d'obtenir la pesa finalitzada, i el monitoratge de la impressió, utilitzant eines com:
+
+\vspace{-0.2cm}
+\begin{figure}[!htb]
+\minipage{0.20\textwidth}
+  \includegraphics[width=5em]{intaresos/arduino.png}
+\endminipage\hfill
+\minipage{0.20\textwidth}
+  \includegraphics[width=5em]{intaresos/raspberry.png}
+\endminipage\hfill
+\minipage{0.20\textwidth}%
+  \includegraphics[width=5em]{intaresos/ubuntu.png}
+\endminipage\hfil
+\minipage{0.20\textwidth}%
+  \includegraphics[width=5em]{intaresos/reprap.png}
+\endminipage\hfill
+\minipage{0.20\textwidth}%
+  \includegraphics[width=5em]{intaresos/octoprint.png}
+\endminipage
+\end{figure}
+
 
 %----------------------------------------------------------------------------------------
 
